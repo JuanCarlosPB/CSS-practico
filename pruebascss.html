@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+<label for="">ESTE ES UNA PRUEBA DE MENU DESPLEABLE</label>
+
+<ul>
+  <li>FUTBOL</li>
+  <li>BASUQTEBOL</li>
+  <li>TENIS
+      <ul>
+        <li value = '24' id = "raqueta">RAQUETA</li>
+        <li>PELOTA PEQUEÑA</li>
+        <li>RED</li>
+      </ul>
+  </li>
+  <li>AJEDREZ
+        <ul>
+          <li class = "ajedrez-principal">TORRE</li>
+          <li class = "ajedrez">ALFIL</li>
+          <li class = "ajedrez">CABALLO</li>
+          <li class = "ajedrez">PEON</li>
+        </ul>
+  </li>
+</ul>
+
+<button type="button" name="button" onclick="tenis()">TENIS</button>
+
+<hr>
+
+<input type="checkbox" class="check">
+<p class="enabled">ACTIVADO</p>
+<p class="disabled">DESACTIVADO</p>
+<hr>
+ACTIVAR DESACTIVAR BOTONES<p>
+<button type="button" name="button" class = "oprimir">OPRIMIR</button><p>
+<button type="button" name="button" class = "oculto">MOSTRAR</button><p>
+<button type="button" name="button" class = "disabled">OCULTAR</button><p>
+<hr>
+
+<P>
+
+  <p class="hermano-mayor">MAYOR</p>
+  <p class="primo">MAYOR</p>
+  <p class="hermano">MAYOR</p>
+  <p>MAYOR</p>
+  <p class="hermano">MAYOR</p>
+  <p>MAYOR</p>
+<hr>
+
+SELECTORES DE ATRIBUTOS
+<input type="email">
+<input type="password" required>
+<input type="submit"value="enviar">
+
+<hr>
+
+SELECTORES DE PAGINAS EXTERNAS
+<a href="index.html">INDICE</a>
+<a href="https://www.google.com.mx">GOOGLE</a>
+<a href="script.js">SCRIPT</a>
+
+SELECTORES DE CLASE PERO CON DFIERENTES ESTILOS
+<p>
+<a href="#" class="button-uno">BOTON UNO</a>
+<a href="#" class="button-dos">BOTON DOS</a>
+
+
+<hr>
+FORMAS CON CAJAS
+<P>
+<div class="circulo"></div>
+<div class="triangulo"></div>
+
+
+<hr>
+SOMBRAS
+
+<div class="sombras"></div>
+<p class="sombrasletras">ESTE ES UN EJEMPLO DE SOMBRAS EN LETRAS</p>
+
+<hr>
+IMAGENES DE FONDO
+<div class="imagen"></div>
+
+<p>
+
+  <div class="imagen2">
+<div class="imagen3">
+</div>
+  </div>
+
+  <hr>
+
+  <div class="attachment">
+    ESTE ES BACKGROUND ATTACHMENT: FIXED
+  </div>
+
+  <hr>
+
+  EN ESTA PARTE VEREMOS COMO PONER VARIAS IMAGENES DE FONDO EN UN BACKGROUND
+
+  <div class="variosfondos">  </div>
+
+<hr>
+
+VEREMMOS COMO PONER EL FONDO EN UNA SOLA LINEA SHORTHAND BACKGROUND
+
+<div class="unalinea"></div>
+
+<hr>
+DESBORDAMIENTO DE TEXTO EN CAJAS
+<p>
+
+
+<p class = "desbordamiento">CSS <br> IS <br> AWESOME</p>
+
+<p>
+  <hr>
+
+  ESE ES UN EJEMPLO DE COMO HACER PALARAS DE MANERA VERTICAL
+  <p>
+  <p id = "vertical">JUAN CARLOS</p>
+<p>
+<hr>
+
+
+CONVERTIR PARLABRAS DE UN TEXTO
+
+<p class = "mayus">ESTE ES EL EJEMPLO DE COMO CONVERTIR DE MAYUSCULAS A MINUSCULAS CON CSS</p>
+
+<p class = "minus">por otra parte este es el ejemplo de como convertir de minusculas a mayusculas con css</p>
+
+<p id = "primerletra">aqui observamos como se convierte la primera letra de cada palabra en mayusculas.
+Para ver bien el ejemplo entra al codigo.</p>
+
+<p class = "full-width">Aqui podemos ver la propiedad "full-width"</p>
+
+
+
+<hr>
+
+<p>
+  <p>
+    <p>
+
+      PSEUDOELEMENTOS
+
+  EN ESTA PARTE VEREMOS LO QUE SON LOS PSEUDOELEMENTOS.
+<p>
+  ::first-line y ::first-letter
+<p>
+  <h1>¿QUE ES CSS</h1>
+  <p class = "primerlinea">La curva de aprendizaje de CSS suele ser sencilla (puede ser algo compleja si
+    nunca has programado o eres totalmente ajeno a estas temáticas)Las siglas CSS (Cascading Style Sheets)
+    significan «Hojas de estilo en cascada» y parten de un concepto simple pero muy potente: aplicar estilos
+    (colores, formas, márgenes, etc...) a uno o varios documentos (generalmente documentos HTML, páginas webs)
+    de forma masiva.
+    Se le denomina estilos en cascada porque se aplican de arriba a abajo (siguiendo un patrón denominado
+    herencia que trataremos más adelante) y en el caso de existir ambigüedad, se siguen una serie de normas
+    para resolverla.
+    La idea de CSS es la de utilizar el concepto de separación de presentación y contenido, intentando
+    que los documentos HTML incluyan sólo información y datos, relativos al significado de la información
+    a transmitir (el contenido), y todos los aspectos relacionados con el estilo (diseño, colores, formas, etc...)
+    se encuentren en un documento CSS independiente (la presentación).</p>
+
+
+  <p class="primerlinea"> El W3C define las especificaciones del estándar CSS. Después,
+    los navegadores intentan implementar esas especificaciones, para que las páginas web se vean igual en todos ellos.
+    Los navegadores cada vez cumplen más y mejor el estándar CSS. Por ejemplo: Internet Explorer 6 cumplía
+    el estándar en sólo un 12% mientras que Internet Explorer 9 lo cumple en un 95%. Por eso se deben
+    maquetar las páginas web siguiendo el estándar CSS y no las especificaciones de un navegador determinado.
+    También hay que procurar mantener actualizado el navegador, ya que a medida que van cumpliendo el estándar,
+    van añadiendo funcionalidades que antes no tenían.</p>
+<hr>
+
+PSEUDOELEMENTO    :: before y ::after
+
+<p>
+
+  <h1 class="beforeafter">ESTE ES EL TITULO H1</h1>
+  <p>
+  <h1 class = "before" id ="este_es_id"> OTRO EJEMPLO</h1>
+  <p>
+  <h1 class = "imagenh1">LA IMAGEN DE ARRIBA ESTA DESDE CSS CON CONTENT</h1>
+
+
+  <hr>
+
+  SUBRAYADO ANIMADO
+
+<h1 class = "lineado">Tu futuro te está esperando, TU PUEDES LOGRARLO</h1>
+<p>
+
+<hr>
+
+<p>
+<br>
+  COMO PONER UNA IMAGEN COMO VIÑETA
+
+  <p>
+    <br>
+
+    <ol>
+      <li>NOMBRES</li>
+      <ol>
+        <li>MAYRA</li>
+        <li>VANESA</li>
+        <li>CAROLINA</li>
+        <li>EDITH</li>
+      </ol>
+      <li>ANIMALES</li>
+      <li>PELICULAS</li>
+      <ol>
+        <li>TITANIC</li>
+        <li>AVENGERS</li>
+      </ol>
+      <li>CARROS</li>
+      <li>MUJERES</li>
+    </ol>
+
+
+    <hr>
+<p>
+    CONTADORES
+
+    <p>
+<!-- ESTE ES UN COMENTARIO-->
+      <p>
+
+        ESTE ES UN EJEMPLO DE CONTADORES EN CSS
+
+        <h1 class="contadores1">INTRODUCCION</h1>
+        <div class="chapters">
+        <h2 class="contadoresh2">QUE ES CSS</h2>
+        <h2 class="contadoresh2">HISTORIA</h2>
+        <h2 class="contadoresh2">COMIENZOS</h2>
+        <h2 class="contadoresh2">COMO USAR CSS?</h2>
+        </div>
+
+        <p>
+          <p>
+            <hr>
+            <p>
+              CONTADORES ANIDADOS CON CLASES Y DIVS
+
+              <div class="temary">
+  <div class="class">
+    <h2 class="class-title">Box model</h2>
+    <p class="class-topic">Margin</p>
+    <p class="class-topic">Width</p>
+    <p class="class-topic">Height</p>
+    <p class="class-topic">Padding</p>
+  </div>
+
+  <div class="class">
+    <h2 class="class-title">Listas</h2>
+    <p class="class-topic">list-style-type</p>
+    <p class="class-topic">list-style-position</p>
+    <p class="class-topic">list-style-image</p>
+  </div>
+
+  <div class="class">
+    <h2 class="class-title">Contadores</h2>
+    <p class="class-topic">counter-reset</p>
+    <p class="class-topic">counter-increment</p>
+    <p class="class-topic">counter()</p>
+    <p class="class-topic">counters()</p>
+  </div>
+</div>
+
+
+<p>
+  <p>
+    <hr>
+    <p>
+      COMO HACER DEGRADADOS CON CSS
+      <p>
+        <div class="degradado">
+
+        </div>
+
+        STOPS EN DEGRADADOS
+
+        <div class="stopdeg">
+
+        </div>
+
+        STOPS EN DEGRADADOS
+
+        <div class="orientacion">
+
+        </div>
+
+        STOPS EN DEGRADADOS
+
+        <div class="orientacion">
+
+        </div>
+
+        DEGRADADOS REPETIDOS
+
+        <div class="repetidos">
+
+        </div>
+
+        DEGRADADOS GRADIAL
+
+        <div class="gradial">
+
+        </div>
+
+
+        <div class="gradial2">
+
+        </div>
+
+        <hr>
+
+        POSICIONES
+        <p>
+          <br>
+          ABSOLUTE
+
+          <div class="absolute">
+            <span class = "spanabsolute">HOLA</span>
+
+          </div>
+<script>
+  function tenis(){
+  var raqueta = document.getElementById("raqueta").value;
+  console.log(raqueta);
+  if (raqueta == 23) {
+    alert("el numero es igual");
+  }else{
+      prompt("EXISTE UN ERROR");
+  }
+}
+</script>
+  </body>
+</html>

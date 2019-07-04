@@ -1,0 +1,474 @@
+/* modificar texto */
+:root {
+   --verde: orange;
+   --blue: pink;
+}
+
+*,* ::before, *::after{
+  box-sizing: border-box;
+}
+
+.🧠{
+  background: var(--verde);
+}
+
+.🤢{
+  background: var(--blue);
+}
+
+body{
+  /* PARA PONER COLOR AL FONDO
+  background-color: lime;*/
+  /* PARA PONER COLOR AL FONDO
+  background-image: url(avengers.jpg);
+  background-repeat: no-repeat;*/
+  /*padding-bottom: 75em;*/  /*te genra scroll en tu pagina web sin necesidad de tener elementos */
+}
+
+
+/* PRUEBASCSS.HTML */
+
+li > ul {
+  display: none;
+}
+
+li:hover ul{
+  display: block;
+}
+
+.ajedrez:hover {
+  background: green;
+  opacity: 0.5;
+}
+.ajedrez-principal:hover {
+  background: red;
+  opacity: 0.5;
+}
+
+/* PRUEBASCSS.HTML segunda parte*/
+.enabled{
+  display: none;
+}
+
+.check:checked + .enabled{
+  display: block;
+}
+
+.onclick:focus + .oculto {visibility:hidden}
+
+.check:checked ~ .disabled{
+  display: none;
+}
+
+.hermano-mayor ~ .hermano{
+  background: yellow;
+}
+
+.hermano-mayor + .primo{
+  background: red;
+}
+
+
+/* PRUEBASCSS.HTML tercera parte*/
+
+[type="email"]{
+  border: 3px solid blue
+}
+
+[type= "submit"]{
+  background: red;
+  color:white;
+}
+
+
+[required]{
+  border: 5px solid orange;
+  margin: 5px;
+}
+
+
+/* PRUEBASCSS.HTML CUARTA parte*/
+
+[href^="index"]{
+  background: orange;
+}
+
+[href^="https://www.google.com"]{
+  background: red;
+}
+
+[href$=".js"]{
+  background: black;
+  color: white;
+}
+
+[class*="button-"] {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: yellow;
+  border: 10px solid black;
+  opacity: 0.5;
+}
+
+[class="button-uno"]{
+  background: red
+}
+
+[class="button-dos"]{
+  background: blue
+}
+
+
+.circulo{
+  background: red;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto 0;
+  border-radius: 50%;
+  outline: 2px solid red;
+
+}
+
+.triangulo{
+width: 200px;
+height: 200px;
+border: 100px solid;
+border-color: blue transparent transparent;
+margin-left: 42.5%;
+outline: 2px solid red;
+}
+
+.sombras{
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 10px auto 70px;
+  border-radius: 50%;
+  box-shadow: -2px -2px 50px 10px blue inset,
+               2px  2px 50px 10px blue inset,
+               20px  20px 50px 20px yellow inset,
+              -20px -20px 50px 20px yellow inset,
+               30px  30px 50px 40px green inset,
+              -30px -30px 50px 40px green inset,
+              0 30px 20px -1px rgba(0,0,0,.5);
+
+}
+
+
+.sombrasletras{
+text-shadow: 2px 8px 7px 2px rgba(0,0,0,.5);
+}
+
+
+.imagen{
+  width: 600px;
+  height: 400px;
+  background-image: url(gears.jpg);
+  background-clip: content-box;
+  background-origin: content-box;
+  background-size: 100% 100%;
+  border-radius: 150px;
+  padding: 30px;
+  border: 20px solid lime;
+  margin: 50px auto;
+  box-shadow: 0 20px 20px 8px gray;
+}
+
+.imagen2{
+  width: 400px;
+  height: 400px;
+  background-color: orange;
+  margin: 60px auto 10px;
+  border-radius: 100px;
+
+}
+
+.imagen3{
+  background-image: url(goku.jpg);
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  border-radius: 300px;
+  background-repeat: no-repeat;
+  background-position: top 30px left 30px;
+  background-size: 85% 84%;
+}
+
+.attachment{
+  background-attachment: fixed;
+  background-image: url(auto.jpg);
+  text-align: center;
+  background-size: 800px 600px; /* tamaño de mi imagen*/
+  color: BLUE;   /* color de letra*/
+  font-size: 2em; /*tamaño de letra */
+  height: 400px;  /*tamaño de caja */
+  width: 800px;   /*tamaño de caja */
+  margin: 5px auto;  /* seperacionde la caja a sus bordes */
+  background-position: bottom center;  /* posisicon de la imagen*/
+  background-repeat: no-repeat; /*para que al mover el scroll no se vea la imagen arroba o abajo */
+  }
+
+  .variosfondos{
+    height: 700px;
+    width: 1000px;
+    background-image: url(anillo.jpg),url(avengers.jpg), url(goku.jpg), url(gears.jpg);
+    background-position: top left, bottom 10px right 20px, right top;
+    background-size: auto, 300px 300px,300px 375px, 100% 100%;
+    background-repeat: no-repeat;
+    margin: 5px auto;
+  }
+
+  .unalinea{
+    height: 700px;
+    width: 1000px;
+    background: url(movimiento2.gif) top 20px right 20px / 250px 150px no-repeat,
+                url(bart.gif) bottom 10px right 20px / 300px 300px no-repeat,
+                url(jackgif.gif) bottom 15px right 8px / 200px no-repeat,
+                url(movimiento1.gif)  left bottom / 80px 100% no-repeat,
+                url(robot.jpg) center/100% 100% no-repeat;
+
+                margin: 5px auto;
+  }
+
+
+.desbordamiento{
+  font-size: 3em;
+  width: 160PX;
+  margin: 5px auto;
+  border: 3px solid blue;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  /*word-wrap: break-word;
+  word-break: break-all;*/
+}
+
+#vertical{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.mayus{
+  text-transform: lowercase;
+  background-color: green;
+  width: 400px;
+  height: 200px;
+}
+
+.mayus:hover{
+  text-transform: uppercase;
+  background-color: red;
+  transition: all .5s ease-out;
+  width: 400px;
+  height: 200px;
+}
+
+.minus{
+text-transform: uppercase;
+background-color: yellow;
+width: 400px;
+height: 200px;
+}
+.minus:hover{
+text-transform: lowercase;
+background-color: orange;
+border: 5px solid blue;
+transition: all .5s ease-out;
+width: 400px;
+height: 200px;
+
+}
+
+#primerletra{
+  text-transform: capitalize;
+  background-color: red;
+}
+
+.full-width{
+  text-transform: full-width;
+  background-color: blue;
+}
+
+.primerlinea{
+  margin: 0;
+}
+
+.primerlinea::first-line{
+  color: red;
+}
+
+.primerlinea::first-letter{
+  color: blue;
+  font-size: 4em;
+  font-family: cursive;
+  float: left;
+  line-height: 1;
+  margin-right: .2em;
+
+}
+
+
+.beforeafter::before{
+  content: 'Hola como esta ';
+  color: red;
+}
+
+
+.beforeafter::after{
+  content: ' tiene en el css content';
+  color: blue;
+}
+
+
+.before::before{
+  content: attr(id); /* CON ESTO IMPRIMIRMOS LA PROPIEDAD ID*/
+  display: block;
+  background: green;
+}
+
+.before{
+  outline: 3px solid red;
+}
+
+.imagenh1::before{
+  content: url(anillo.jpg);
+  display: block;
+  outline: 3px solid orange;
+}
+
+.lineado{
+  display: table;
+  margin: 0 auto;
+}
+.lineado::after{
+  content: '';
+ display: block;
+ height: 3px;
+ background: red;
+ transform: scale(0,1);
+ transform-origin: center;
+ transition: transform .25s;
+}
+.lineado:hover::after{
+   transform: scale(1,1);
+}
+ol, ul{
+  list-style-type: none;
+}
+li::before{
+  content: '';
+  background: url(uefa.jpg);
+  background-size: contain;
+  display: inline-block;
+  width: 2.6em;
+  height: 2.5em;
+  margin-right: 1em;
+}
+
+li:hover{
+  background-color: green;
+  opacity: 0.5;
+}
+
+
+/* so de contadores en html*/
+.chapters{
+  counter-reset: contador;    /* CREAS TU CONTADOR*/
+}
+
+.contadoresh2{
+  counter-increment: contadoresh2;    /* LO ASIGNAS EN MEMORIA*/
+}
+
+.contadoresh2::before{
+  content: counter(contadoresh2) '. ';   /* LO IMPRIMES*/
+  color:red;
+}
+
+
+.temary {
+  counter-reset: classes;
+}
+
+.class {
+  counter-increment: classes;
+  counter-reset: topics;
+}
+
+.class-title::before {
+  content: counter(classes) '. ';
+}
+
+.class-topic {
+  counter-increment: topics;
+  padding-left: .5em;
+}
+
+.class-topic::before {
+  content: counter(classes) '.' counter(topics) '. ';
+  color: red;
+  font-size: .75em;
+}
+
+
+.degradado{
+  background-image: linear-gradient(lime, red, blue, orange, rebeccapurple);
+  width: auto;
+  height: 300px;
+}
+
+.stopdeg{
+  background-image: linear-gradient(green 10%, yellow, blue 90%); /* del 10% hacia abajo es verde puro,despues*/
+  width: auto;                                                  /* empieza el deraddado y del 90% en adelante es azul puro*/
+  height: 300px;
+}
+
+
+.orientacion{
+  background-image: linear-gradient(to bottom right, orange 10%, yellow, purple 90%);
+  width: auto;                                                  /* de que esquina incia el degradado*/
+  height: 300px;
+}
+
+
+.repetidos{
+  background-image: repeating-linear-gradient(to bottom left, teal 20px, aqua 50px);
+  width: auto;                                                  /* de que esquina incia el degradado*/
+  height: 300px;
+}
+
+
+.gradial{
+  background-image: radial-gradient(at 0 0, yellow, red, cyan, purple);
+  height: 300px;
+  width: 700px;
+  margin: 2em auto;
+}
+
+.gradial2{
+  background-image: radial-gradient(500px 90px,  yellow, red, cyan, purple);
+  height: 300px;
+  width: 700px;
+  margin: 2em auto;
+  border-radius: 70px;
+}
+
+.absolute{
+  position: relative;
+  /*Siempre el contenedor es relative para usar obsolut en el hijo*/
+  width: 500px;
+  height: 500px;
+  background: yellow;
+}
+
+.spanabsolute{
+position: absolute;
+width: 50px;
+right: 0;
+bottom: 0;
+height: 50px;
+border: 1px solid #000;
+text-align: center;
+line-height: 50px;
+}
